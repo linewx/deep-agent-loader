@@ -11,10 +11,13 @@ import java.nio.file.Paths;
  * Created by adi on 6/10/18.
  */
 public class AgentLoader {
-    private static Logger LOGGER = LoggerFactory.getLogger(AgentLoader.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(AgentLoader.class);
+
     public static void main(String[] args) {
         Paths.get(System.getProperty("user.home"), "abc", "dfg");
-    String agentFilePath = "/Users/luganlin/git/github/tutorials/core-java-modules/core-java-jvm/target/core-java-jvm-0.1.0-SNAPSHOT-jar-with-dependencies.jar";
+        String a = null;
+        LOGGER.error("test result is {}", a);
+        String agentFilePath = "/Users/luganlin/git/github/tutorials/core-java-modules/core-java-jvm/target/core-java-jvm-0.1.0-SNAPSHOT-jar-with-dependencies.jar";
         if (args.length > 2) {
             agentFilePath = args[2];
         }
